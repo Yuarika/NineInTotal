@@ -3,7 +3,7 @@
 // サイトURLが空欄の場合は、現在開いている公開先のURLを使います。
 window.PUZZLE_CONFIG = Object.freeze({
   // サイトの公開URL（トップページ）。挑戦・クリア両方の投稿に入ります。
-  pageURL: '',
+  pageURL: 'https://yuarika.github.io/NineInTotal/',
   // 公開告知ポストのURL。クリア投稿だけに入ります。
   announcementPostURL: ''
 });
