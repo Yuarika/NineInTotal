@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080c22"><meta name="description" content="9つの記号で、ひとつの等式を完成させるWeb謎。"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=20261119-colors"><script src="config.js" defer></script><script src="site.js" defer></script><title>9 in total. — GAME</title><script src="sound.js" defer></script><script src="game.js?v=20261119-colors" defer></script><!-- SHARE-META:START -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="9 in total.">
+<meta property="og:description" content="9つの記号で、ひとつの等式を完成させるWeb謎。">
+<meta property="og:url" content="https://nine-in-total.lushtruffle.chatgpt.site/">
+<link rel="canonical" href="https://nine-in-total.lushtruffle.chatgpt.site/">
+<meta property="og:image" content="https://nine-in-total.lushtruffle.chatgpt.site/thumbnail.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+<meta property="og:image:alt" content="Web謎 9 in total. サムネイル">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="9 in total.">
+<meta name="twitter:description" content="9つの記号で、ひとつの等式を完成させるWeb謎。">
+<meta name="twitter:image" content="https://nine-in-total.lushtruffle.chatgpt.site/thumbnail.png">
+<meta name="twitter:image:alt" content="Web謎 9 in total. サムネイル">
+<!-- SHARE-META:END -->
+</head><body class="game-page">
+<header class="page-header"><a class="brand" href="index.html">9 in total<span>.</span></a><div class="header-actions"><button id="sound-toggle" class="sound-toggle" type="button" aria-label="効果音をオフにする" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9H8L13 5V19L8 15H4Z"/><path class="sound-waves" d="M17 8Q21 12 17 16M19 5Q26 12 19 19"/></svg></button><a class="back-link" href="index.html">タイトルへ ↗</a></div></header>
+<main id="game-main" class="game-main"><h1 class="game-title">9 in total<span>.</span></h1>
+    <section class="puzzle" aria-label="記号を並べる謎">
+      <div class="section-meta"><span>9 in total.</span><span id="counter">0 / 9</span></div>
+      <div id="equation" class="equation" role="group" aria-label="3マス 足す 3マス 足す 3マス イコール 上矢印、逆さのびっくりマーク、上矢印、右矢印"></div>
+      <div class="order-clue" aria-label="ドット模様の数 ＜ 斜線模様の数 ＜ 格子模様の数"><span class="pattern-word order-0" aria-hidden="true"><i class="pattern-key"></i><i class="pattern-key"></i><i class="pattern-key"></i></span><span aria-hidden="true">＜</span><span class="pattern-word order-1" aria-hidden="true"><i class="pattern-key"></i><i class="pattern-key"></i><i class="pattern-key"></i></span><span aria-hidden="true">＜</span><span class="pattern-word order-2" aria-hidden="true"><i class="pattern-key"></i><i class="pattern-key"></i><i class="pattern-key"></i></span></div>
+      <div class="workbench"><div id="tray" class="tray" role="group" aria-label="使える9つの記号"></div></div>
+      <div class="action-controls"><div class="puzzle-controls"><button id="rotate" class="rotate-button" type="button" aria-label="選択した記号を回転" disabled><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M26 12A11 11 0 1 0 27 20M26 5V13H18"/></svg></button></div>
+      <button id="check" class="check-button" type="button">CHECK <span aria-hidden="true">↵</span></button></div>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <button id="reset" class="reset" type="button">↺ 最初からやり直す</button>
+    </section>
+    <section class="hints" aria-labelledby="hints-title">
+      <div class="section-meta"><h2 id="hints-title">HINTS / ヒント</h2></div>
+      <details class="hint"><summary>ヒント1 <span aria-hidden="true">＋</span></summary><p>3つの□には、3文字の数字が入ります。</p></details>
+      <details class="hint"><summary>ヒント2 <span aria-hidden="true">＋</span></summary><p>タイトルと同じ言語で考えてみましょう。</p></details>
+      <details class="hint"><summary>ヒント3 <span aria-hidden="true">＋</span></summary><p>矢印は『方角』を表しています。</p></details>
+    </section>
+
+
+</main>
+<section id="success" class="clear-panel" hidden role="dialog" aria-modal="true" aria-labelledby="clear-title" aria-describedby="clear-answer"><div class="clear-card"><p class="clear-eyebrow">GAME CLEAR</p><h2 id="clear-title" tabindex="-1">謎を解き明かした！</h2><div class="clear-answer" id="clear-answer"><p>one <span>＋</span> two <span>＋</span> six</p><strong>1 ＋ 2 ＋ 6 ＝ 9</strong><small>1 ＜ 2 ＜ 6</small></div><div class="clear-actions"><a class="action primary" data-post="clear" target="_blank" rel="noopener noreferrer">𝕏 クリアをポスト ↗</a><a class="action" href="https://yuarika.github.io/Web_Puzzles/" target="_blank" rel="noopener noreferrer">ほかのWeb謎を遊ぶ ↗</a><a class="action" href="https://yuarika.github.io/Yuarika_Profile/" target="_blank" rel="noopener noreferrer">プロフィール ↗</a></div><div class="clear-bottom"><a href="index.html">タイトルへ戻る</a><button id="retry" type="button">もう一度遊ぶ</button></div></div></section>
+<footer>© Yuarika</footer></body></html>
